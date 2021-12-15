@@ -13,7 +13,7 @@ public class NoteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
 
-        NoteFragment fragment  = (NoteFragment)
+        NoteFragment fragment = (NoteFragment)
                 getSupportFragmentManager().findFragmentById(R.id.note_fragment);
         int notesId = (int) getIntent().getExtras().get(NOTES_ID);
         fragment.setNote(notesId);
