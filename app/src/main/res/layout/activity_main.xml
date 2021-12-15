@@ -11,11 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <!--    <com.google.android.material.button.MaterialButton-->
-    <!--        android:id="@+id/add_note"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:onClick="onAddNote"-->
-    <!--        android:text="@string/add_note" />-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_note"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cornerRadius="50dp"
+            android:onClick="onAddNote"
+            android:text="@string/add_note" />
 
 </LinearLayout>
