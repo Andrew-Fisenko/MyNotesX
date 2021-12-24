@@ -20,4 +20,5 @@
             android:onClick="onAddNote"
             android:text="@string/add_note" />
 
+
 </LinearLayout>
