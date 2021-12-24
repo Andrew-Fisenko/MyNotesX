@@ -1,7 +1,12 @@
 <resources>
-    <string name="app_name">MyNotesX</string>
+    <string name="app_name">MyNotesX2</string>
     <string name="add_note">ADD NOTE</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name_note_1">Заметка 1</string>
+    <string name="find">Find</string>
+    <string name="send">Send</string>
+    <string name="exit">Exit</string>
+    <string name="about">About</string>
+
 </resources>
