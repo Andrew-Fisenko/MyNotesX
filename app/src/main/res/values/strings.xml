@@ -14,4 +14,10 @@
     <string name="drawer_header">Travel Notes</string>
     <string name="navigation_drawer_open">AAAAA</string>
     <string name="navigation_drawer_close">BBBBB</string>
+    <string name="action_snackbar">OK</string>
+    <string name="warning">Service unavailable</string>
+    <string name="bye">Good bye!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure">Are you sure?</string>
 </resources>
