@@ -47,16 +47,13 @@ public class MainActivity extends AppCompatActivity implements NoteListFragment.
 
 
     private void initDrawer(Toolbar toolbar) {
-// Находим DrawerLayout
         final DrawerLayout drawer = findViewById(R.id.drawer_layout);
-// Создаем ActionBarDrawerToggle
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar,
                 R.string.navigation_drawer_open,
                 R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-// Обработка навигационного меню
         NavigationView navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
