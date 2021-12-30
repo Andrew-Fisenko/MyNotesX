@@ -13,11 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <ImageView android:id="@+id/info_image"
-            android:layout_height="0dp"
             android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1.0"
             android:scaleType="centerCrop"/>
+
         <TextView
             android:id="@+id/info_text"
             android:layout_marginLeft="4dp"

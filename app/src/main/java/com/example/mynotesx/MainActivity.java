@@ -23,7 +23,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 
-public class MainActivity extends AppCompatActivity implements NoteListFragment.Listener {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements NoteListFragment.
                                         finish();
                                     }
                                 })
-                                .setNegativeButton(R.string.no,null)
+                                .setNegativeButton(R.string.no, null)
                                 .show();
                         return true;
                 }
@@ -102,23 +102,23 @@ public class MainActivity extends AppCompatActivity implements NoteListFragment.
     }
 
 
-    @Override
-    public void itemClicked(long id) {
-        View fragmentContainer = findViewById(R.id.list_fragment);
-        if (fragmentContainer != null) {
-            NoteFragment fragment = new NoteFragment();
-            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            fragment.setNote(id);
-            transaction.replace(R.id.list_fragment, fragment);
-            transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-            transaction.addToBackStack(null);
-            transaction.commit();
-        } else {
-            Intent intent = new Intent(this, NoteActivity.class);
-            intent.putExtra(NoteActivity.NOTES_ID, (int) id);
-            startActivity(intent);
-        }
-    }
+//    @Override
+//    public void itemClicked(long id) {
+//        View fragmentContainer = findViewById(R.id.list_fragment);
+//        if (fragmentContainer != null) {
+//            NoteFragment fragment = new NoteFragment();
+//            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//            fragment.setNote(id);
+//            transaction.replace(R.id.list_fragment, fragment);
+//            transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+//            transaction.addToBackStack(null);
+//            transaction.commit();
+//        } else {
+//            Intent intent = new Intent(this, NoteActivity.class);
+//            intent.putExtra(NoteActivity.NOTES_ID, (int) id);
+//            startActivity(intent);
+//        }
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements NoteListFragment.
                                 finish();
                             }
                         })
-                        .setNegativeButton(R.string.no,null)
+                        .setNegativeButton(R.string.no, null)
                         .show();
                 return true;
         }

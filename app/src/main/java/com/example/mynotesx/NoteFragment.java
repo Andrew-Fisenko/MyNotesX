@@ -32,16 +32,14 @@ public class NoteFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         if (view != null) {
 
-
             TextView title = (TextView) view.findViewById(R.id.name_note);
             Notes notes = Notes.notes[(int) noteId];
             title.setText(notes.getNameNote());
 
-
-            TravelCard travelCards = TravelCard.travelCards[(int) noteId ] ;
-            int cityImage = TravelCard.travelCards[(int)noteId].getImageResourceId();
-            ImageView imageView = (ImageView)view.findViewById(R.id.card_image);
-            imageView.setImageDrawable((ContextCompat.getDrawable( getContext(), cityImage)));
+            TravelCard travelCards = TravelCard.travelCards[(int) noteId];
+            int cityImage = TravelCard.travelCards[(int) noteId].getImageResourceId();
+            ImageView imageView = (ImageView) view.findViewById(R.id.card_image);
+            imageView.setImageDrawable((ContextCompat.getDrawable(getContext(), cityImage)));
 
             TextView date = (TextView) view.findViewById(R.id.date_note);
             date.setText(notes.getDateNote());

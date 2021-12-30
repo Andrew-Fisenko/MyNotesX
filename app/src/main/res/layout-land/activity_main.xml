@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/list_fragment"
-        android:name="com.example.mynotesx.NoteListFragment"
+        android:name="com.example.mynotesx.NoteFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="2" />
