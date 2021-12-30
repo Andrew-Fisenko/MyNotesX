@@ -1,7 +1,11 @@
 package com.example.mynotesx;
 
 import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
+=======
+
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.TintableCheckedTextView;
@@ -10,13 +14,19 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+
 import com.google.android.material.navigation.NavigationView;
+
+import android.view.View;
+import android.widget.Button;
+
 
 
 public class MainActivity extends AppCompatActivity implements NoteListFragment.Listener {
@@ -29,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements NoteListFragment.
         initToolbarAndDrawer();
 
 
+
         Button addNote = findViewById(R.id.add_note);
         addNote.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements NoteListFragment.
                 Toast.makeText(getApplicationContext(), "Add note", Toast.LENGTH_SHORT).show();
             }
         });
+
 
     }
 
@@ -96,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements NoteListFragment.
         }
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
@@ -124,6 +137,5 @@ public class MainActivity extends AppCompatActivity implements NoteListFragment.
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 }

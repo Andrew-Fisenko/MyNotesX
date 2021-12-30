@@ -8,10 +8,12 @@
     <string name="send">Send</string>
     <string name="exit">Exit</string>
     <string name="about">About</string>
+
     <string name="name_app">Travel Note App</string>
     <string name="about_developers">Developer - Andrew Fisenko</string>
     <string name="version">V 1.03</string>
     <string name="drawer_header">Travel Notes</string>
     <string name="navigation_drawer_open">AAAAA</string>
     <string name="navigation_drawer_close">BBBBB</string>
+
 </resources>
