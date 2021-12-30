@@ -104,12 +104,12 @@ public class MainActivity extends AppCompatActivity implements NoteListFragment.
 
     @Override
     public void itemClicked(long id) {
-        View fragmentContainer = findViewById(R.id.fragment_container);
+        View fragmentContainer = findViewById(R.id.list_fragment);
         if (fragmentContainer != null) {
             NoteFragment fragment = new NoteFragment();
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             fragment.setNote(id);
-            transaction.replace(R.id.fragment_container, fragment);
+            transaction.replace(R.id.list_fragment, fragment);
             transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             transaction.addToBackStack(null);
             transaction.commit();
