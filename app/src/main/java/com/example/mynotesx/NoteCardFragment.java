@@ -16,7 +16,7 @@ public class NoteCardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        RecyclerView cardRecycler = (RecyclerView)inflater.inflate(
+        RecyclerView cardRecycler = (RecyclerView) inflater.inflate(
                 R.layout.fragment_card, container, false);
 
         String[] cardNames = new String[TravelCard.travelCards.length];
